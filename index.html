@@ -8,7 +8,12 @@
 <body>
     <h1>Formulaire de choix de matiere</h1>
     <form action="resultat.php" method="post">
-        
+        <label for="nom">Nom :</label>
+        <input type="text" name="nom" id="nom" required>
+        <label for="prenom">Prénom :</label>
+        <input type="text" name="prenom" id="prenom" required>
+        <label for="age">Age :</label>
+        <input type="number" name="age" id="age" min="0">
     </form>
 </body>
 </html>
