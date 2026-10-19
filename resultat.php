@@ -16,5 +16,9 @@ $note     = $_POST['note'] ?? '';
 </head>
 <body>
     <h1>Informations enregistrées : </h1>
+    <p>Nom : <?= $nom ?></p>
+    <p>Prénom : <?= $prenom ?></p>
+    <p>Sexe : <?= $sexe ?></p>
+    <p>Âge : <?= $age ?></p>
 </body>
 </html>
