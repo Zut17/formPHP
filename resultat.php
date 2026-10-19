@@ -20,5 +20,11 @@ $note     = $_POST['note'] ?? '';
     <p>Prénom : <?= $prenom ?></p>
     <p>Sexe : <?= $sexe ?></p>
     <p>Âge : <?= $age ?></p>
+    <p>Matières choisies :</p>
+    <ul>
+        <?php foreach ($matieres as $matiere) { ?>
+            <li><?= $matiere ?></li>
+        <?php } ?>
+    </ul>
 </body>
 </html>
