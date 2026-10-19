@@ -8,8 +8,9 @@ body{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    height: 100vh;
     background-color: gray;
+    padding: 10px;
+    min-height: 100vh;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 h1{
@@ -28,11 +29,10 @@ form{
     padding: 25px 15px;
     border-radius: 10px;
     width: 75%;
-    height: 88%;
     max-width: 600px;
-    max-height: 90%;
+    
     box-shadow: 0px 0px 10px rgb(55, 55, 55);
-    overflow-y: scroll;
+    
 }
 input{
     cursor: pointer;
@@ -55,16 +55,16 @@ button{
     border-radius: 10px;
     border: none;
     padding: 10px;
-    width: 50%;
-    margin-left: 25%;
+    width: 100%;
     font-size: 14pt;
     font-weight: 600;
     cursor: pointer;
+    text-align: center;
     transition: 0.2s linear smooth ease-in-out;
 }
 button:hover{
     background-color: rgb(176, 175, 175);
-    scale : 1.05;
+    scale : 1.02;
 }
 .sexeRadio, .matiereList{
     margin-bottom: 10px;
@@ -73,6 +73,9 @@ button:hover{
     background-color: white;
     box-shadow: 0px 0px 1px rgb(55, 55, 55);
     flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 textarea{
     width: 100%;
@@ -81,4 +84,22 @@ textarea{
     border: none;
     padding: 10px;
     box-shadow: 0px 0px 1px rgb(55, 55, 55);
+}
+.containerInfo{
+    background-color: rgb(222, 222, 222);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: auto;
+    max-width: 500px;
+    height: auto;
+}
+p{
+    background-color: rgb(202, 202, 202);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 400px;
+    flex-wrap: wrap;
 }

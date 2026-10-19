@@ -16,18 +16,21 @@ $note     = $_POST['note'] ?? '';
 </head>
 <body>
     <h1>Informations enregistrées : </h1>
-    <p>Nom : <?= $nom ?></p>
-    <p>Prénom : <?= $prenom ?></p>
-    <p>Sexe : <?= $sexe ?></p>
-    <p>Âge : <?= $age ?></p>
-    <p>Matières choisies :</p>
-    <ul>
-        <?php foreach ($matieres as $matiere) { ?>
-            <li><?= $matiere ?></li>
+    <div class="containerInfo">
+        <p>Nom : <?= $nom ?></p>
+        <p>Prénom : <?= $prenom ?></p>
+        <p>Sexe : <?= $sexe ?></p>
+        <p>Âge : <?= $age ?></p>
+        <p>Matières choisies :</p>
+        <ul>
+            <?php foreach ($matieres as $matiere) { ?>
+                <li><?= $matiere ?></li>
+            <?php } ?>
+        </ul>
+        <?php if ($note !== '') { ?>
+            <p>Note : <?= $note ?></p>
         <?php } ?>
-    </ul>
-    <?php if ($note !== '') { ?>
-        <p>Note : <?= $note ?></p>
-    <?php } ?>
+    </div>
+    <button><a href="index.html">Retour</a></button>
 </body>
 </html>
