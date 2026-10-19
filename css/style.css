@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box; 
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+    background-color: gray;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+h1{
+    box-shadow: 0px 0px 10px rgb(55, 55, 55);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(202, 202, 202);
+    font-size: 14pt;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 10px;
+    background-color: rgb(222, 222, 222);
+    padding: 25px 15px;
+    border-radius: 10px;
+    width: 75%;
+    height: 88%;
+    max-width: 600px;
+    max-height: 90%;
+    box-shadow: 0px 0px 10px rgb(55, 55, 55);
+    overflow-y: scroll;
+}
+input{
+    cursor: pointer;
+    transition: 0.2s linear smooth ease-in-out;
+}
+input:hover{
+    box-shadow: 0px 0px 10px rgb(55, 55, 55);
+    scale: 1.01;
+}
+input[type="text"], input[type=number]{
+    
+    box-shadow: 0px 0px 1px rgb(55, 55, 55);
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+button{
+    background-color: rgb(202, 202, 202);
+    box-shadow: 0px 0px 1px rgb(55, 55, 55);
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    width: 50%;
+    margin-left: 25%;
+    font-size: 14pt;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s linear smooth ease-in-out;
+}
+button:hover{
+    background-color: rgb(176, 175, 175);
+    scale : 1.05;
+}
+.sexeRadio, .matiereList{
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 1px rgb(55, 55, 55);
+    flex-wrap: wrap;
+}
