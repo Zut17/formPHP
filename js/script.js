@@ -2,8 +2,8 @@ const btnAddNote = document.getElementById("btnAddNote");
 const noteContainer = document.querySelector(".noteContainer");
 
 btnAddNote.addEventListener("click", function () {
+  if (noteContainer.children.length > 0) return;
 
-  
   const textarea = document.createElement("textarea");
 
   textarea.name = "note";
