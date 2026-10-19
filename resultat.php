@@ -26,5 +26,8 @@ $note     = $_POST['note'] ?? '';
             <li><?= $matiere ?></li>
         <?php } ?>
     </ul>
+    <?php if ($note !== '') { ?>
+        <p>Note : <?= $note ?></p>
+    <?php } ?>
 </body>
 </html>
